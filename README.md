@@ -1,2 +1,5 @@
 # diacord-self-bot-
-**Music 
+
+Music 
+&
+Random status & activitys
