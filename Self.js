@@ -7,19 +7,13 @@
     const ytdl = require('ytdl-core');
     const discordTTS = require('discord-tts');
 
-
     const {
-
         token,
-
         video_urls
-
     } = require("./config.json")
-
 
     app.get('/', (req, res) => res.send('Bot Is Working Well!'));
 
-    
     app.listen(port, () =>
 
         console.log(`Example app listening at http://localhost:${port}`)
