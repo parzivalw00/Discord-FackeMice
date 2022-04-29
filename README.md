@@ -1,4 +1,4 @@
-##### <div diacord-self-bot-
+##### <div align="center"> diacord-self-bot</div>
 
 Music 
 &
