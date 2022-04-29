@@ -1,5 +1,5 @@
 ##### <div align="center"> diacord-self-bot</div>
 
-Music 
+###### Music 
 &
 Random status & activitys
