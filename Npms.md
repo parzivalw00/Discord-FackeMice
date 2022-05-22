@@ -1,4 +1,4 @@
-Install the following in your terminal
+<div align="center"> Install the following in your terminal </div>
 
 ###### <div align="center"> npm install express </div>
 ###### <div align="center"> npm install discord.js@11.5.1 </div>
