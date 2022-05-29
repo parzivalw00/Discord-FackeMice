@@ -3,7 +3,6 @@ const discord = require("discord.js")
 const express = require('express');
 const app = express();
 const port = 4001;
-const ytdl = require('ytdl-core');
 const discordTTS =require('discord-tts');
 
 app.get('/', (req, res) => res.send('Bot Is Working Well!'));
