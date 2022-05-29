@@ -19,23 +19,7 @@ app.listen(port, () =>
 
 const Discord = require('discord.js-self');
 const user = new Discord.Client();
-const {id, id_1, error, success } = require('./config.json');
-
-
-user.on('ready', () => {
-    const channel = user.channels.cache.get(`${id}`);
-    if (!channel) return console.error(`${error}`);
-    channel 
-    .join()
-    .then(connection => {
-        connection.voice.setSelfDeaf(true);
-        connection.voice.setSelfMute(false);
-        console.log(`${success}`);
-    })
-    .catch(e => {
-        console.eroor(e);
-     });
-});
+const { error, success } = require('./config.json');
 
 
 user.on("ready", () => {
@@ -72,21 +56,20 @@ user.on("ready", () => {
 
 
 user.on("message", async (message) => {
-    if (message.content.startsWith(prefix + "join")) {
-    const voiceChannel = user.channels.cache.get("814910544879419433")
-    voiceChannel.join().then(connection => {
-        console.log("joined voice channel")
-        function play(connection) {
-            const stream = video_urls[Math.floor(Math.random() * video_urls.length)]
-            const dispatcher = connection.play(stream)
-            dispatcher.on("finish", () => {
-                play(connection)
-            })
-        }
-        play(connection)
-        return message.channel.send("Hello, i come to your channel.")
+     const targetguild = user.guilds.cache.get('976580118191411200')
+    if (message.content === prefix + "join")) {
+    const channel = user.channels.cache.get('971728627022577674')
+    if (!channel) return console.error(`${error}`);
+    channel 
+    .join()
+    .then(connection => {
+        connection.voice.setSelfDeaf(false);
+        connection.voice.setSelfMute(true);
+        console.log(`${success}`);
     })
-    }
+    .catch(e => {
+        console.error(e);
+     });
 });
 // ======================================================================
 
