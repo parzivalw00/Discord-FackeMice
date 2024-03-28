@@ -3,7 +3,7 @@
     "discord-tts": "^1.2.1",
     "discord.js": "^11.5.1",
     "discord.js-self": "^12.0.4",
-    "express": "^4.18.1",
+    "express": "^4.19.2",
     "ytdl-core": "^4.11.0"
   }
 }
